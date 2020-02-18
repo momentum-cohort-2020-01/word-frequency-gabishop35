@@ -7,9 +7,6 @@ STOP_WORDS = [
 ]
 
 
-# print(string.punctuation)
-
-
 def print_word_freq(file):
     input_str = open_file(file)
     """Read in `file` and print out the frequency of words in that file."""
@@ -23,8 +20,14 @@ def print_word_freq(file):
     print(new_str.lower())
     new_str = new_str.lower()
     list_of_words = new_str.split()
-    print(list_of_words)
 
+
+    # STOP_WORDS.remove(list_of_words)
+    # new_str = new_str.count({list_of_words})
+    # print(new_str)
+    # print(STOP_WORDS)
+    # for STOP_WORDS in new_str
+    #     if STOP_WORDS in
     # pass
 
 
@@ -34,8 +37,6 @@ def open_file(file):
         print(type(open_file))
     return open_file
     # pass
-
-    # file.translate(None, string.punctuation)
  
 
 
