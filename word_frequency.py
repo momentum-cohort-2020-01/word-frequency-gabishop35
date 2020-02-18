@@ -20,14 +20,21 @@ def print_word_freq(file):
     print(new_str.lower())
     new_str = new_str.lower()
     list_of_words = new_str.split()
+    # print(list_of_words)
+
+    # my_list = STOP_WORDS
+    # without_stop_words = list_of_words.remove(my_list)
+    # print(without_stop_words)
+    new_list = list_of_words.copy()
+    print(new_list)
+
+    for word in list_of_words:
+        if word in STOP_WORDS:
+            print(word)
+            new_list.remove(word)
+    print(new_list)
 
 
-    # STOP_WORDS.remove(list_of_words)
-    # new_str = new_str.count({list_of_words})
-    # print(new_str)
-    # print(STOP_WORDS)
-    # for STOP_WORDS in new_str
-    #     if STOP_WORDS in
     # pass
 
 
